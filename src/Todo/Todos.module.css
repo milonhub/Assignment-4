@@ -1,0 +1,30 @@
+.formContainer{
+    background-color: #2c2c2c;
+    width: 50%;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%);
+}
+
+.formContainer label {
+    
+   font-size: 24px;
+}
+input {
+    background-color: white;
+}
+.formContainer input[type = "text"] {
+    font-size: 22px;
+   width: 100%;
+   color: black;
+}
+
+.formContainer textarea {
+    font-size: 22px;
+   width: 100%;
+   color: black;
+}

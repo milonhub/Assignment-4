@@ -1,23 +1,29 @@
-import logo from './logo.svg';
+import {useState} from 'react';
 import './App.css';
+import Todo from './Todo/Todo';
+import Todos from './Todo/Todos';
+import style from "./App.module.css"
+
+
 
 function App() {
+const [userData, setUserData] = useState([])
+  const handleUser = (user) => {
+    setUserData((preuserdata) => {
+      return [...preuserdata, {user}]
+    });
+  }
+  console.log(userData)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className= {style.container}>
+      <Todos onAdduser = {handleUser}/>
+
+      <div className={style.dflex}>
+      {userData.map((user)=> {
+        return <Todo user = {user} key= {Math.random()}/>
+      })}
+      </div>
+     
     </div>
   );
 }

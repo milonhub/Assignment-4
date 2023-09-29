@@ -1,0 +1,23 @@
+*{
+    
+    box-sizing: border-box;
+
+}
+.container {
+    
+    /* background-color: #2C2C2C; */
+    width: 100%;
+    position: relative;
+    left:50%;
+    right: 50%;
+    background-color: #4C4C4C;
+    transform: translate(-50%);
+   height: 100vh;
+    
+}
+
+.dflex{
+    display: flex;
+    flex-wrap: wrap;
+
+} 
