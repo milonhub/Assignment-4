@@ -23,3 +23,6 @@ yarn-debug.log*
 yarn-error.log*
 
 /src/Components
+/src/Todo
+/src/UseEfect
+/src/CustomHooks/useCustomHook.js
